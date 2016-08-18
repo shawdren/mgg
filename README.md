@@ -1,8 +1,6 @@
-# CI-AdminLTE v1.4.3
+# CI-AdminLTE 
 
-## Demo
-
-Coming soon
+## Learn CI admin framework 
 
 ### Login
  * Email : `admin@admin.com`
@@ -13,9 +11,7 @@ Support for most major browsers including Chrome, Firefox, IE9+, Opera and Safar
 
 ## Languages
   * English
-  * French
-  * Portuguese (pending)
-  * ... and more soon
+  * Chinese 
  
 ## Dependencies
 | NAME | VERSION | WEB | REPO |
