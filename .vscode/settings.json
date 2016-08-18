@@ -1,0 +1,11 @@
+// 将设置放入此文件中以覆盖默认值和用户设置。
+{
+      // 不管 php 验证是否已启用。
+    "php.validate.enable": true,
+
+    // 指向可执行的 php。
+    "php.validate.executablePath": "c:/php/php.exe",
+
+    // 不管 linter 是在 save 还是在 type 上运行。
+    "php.validate.run": "onSave",
+}
