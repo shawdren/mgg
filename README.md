@@ -1,4 +1,4 @@
-# CI-AdminLTE 
+# MGG project based on the framework of CI-AdminLTE 
 
 ## Learn CI admin framework 
 
