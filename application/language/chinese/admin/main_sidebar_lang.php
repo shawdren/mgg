@@ -43,4 +43,4 @@ $lang['menu_search'] = 'Search';
 /* * */$lang['menu_webapp']                     = 'Web application';
 /* ****** */$lang['menu_license']               = 'License';
 /* ****** */$lang['menu_logs']                  = '日志';
-/* ****** */$lang['menu_resources']             = 'Resources';
+/* ****** */$lang['menu_resources']             = '资源';

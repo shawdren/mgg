@@ -10,7 +10,7 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$lang['users_action']              = 'Action';
+$lang['users_action']              = '动作';
 $lang['users_active']              = 'Active';
 $lang['users_company']             = 'Company';
 $lang['users_create_user']         = 'Create user';
