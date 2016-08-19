@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 ?>
 
             <div class="content-wrapper">
@@ -22,17 +21,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <tr>
                                                 <th><?php echo lang('groups_name');?></th>
                                                 <th><?php echo lang('groups_description');?></th>
-                                                <th><?php echo lang('groups_color');?></th>
                                                 <th><?php echo lang('groups_action');?></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-<?php foreach ($logs as $values):?>
+<?php foreach ($logs as $log):?>
                                             <tr>
-                                                <td><?php echo htmlspecialchars($values->ip, ENT_QUOTES, 'UTF-8'); ?></td>
-                                                <td><?php echo htmlspecialchars($values->description, ENT_QUOTES, 'UTF-8'); ?></td>
-                                                <td><i class="fa fa-stop" style="color:<?php echo $values->bgcolor; ?>"></i></td>
-                                                <td><?php echo anchor("admin/groups/edit/".$values->id, lang('actions_edit')); ?></td>
+                                                <td><?php echo htmlspecialchars($log->ip, ENT_QUOTES, 'UTF-8'); ?></td>
+                                                <td><?php echo htmlspecialchars($log->description, ENT_QUOTES, 'UTF-8'); ?></td>
+                                                <td><?php echo anchor("admin/groups/edit/".$log->id, lang('actions_edit')); ?></td>
                                             </tr>
 <?php endforeach;?>
                                         </tbody>

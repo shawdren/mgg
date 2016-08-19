@@ -18,8 +18,13 @@ class logs_model extends CI_Model {
         }
         else
         {
-            return FALSE;
+            return $query->result_array();
         }
+    }
+
+    public function set_log($data)
+    {
+        return $this->db->insert('logs', $data);
     }
 
 }

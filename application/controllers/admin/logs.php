@@ -8,6 +8,7 @@ class Logs extends Admin_Controller {
         parent::__construct();
         /* Title Page :: Common */
         $this->page_title->push(lang('menu_logs'));
+        $this->load->model('admin/logs_model');
         $this->data['pagetitle'] = $this->page_title->show();
 
         /* Breadcrumbs :: Common */
@@ -26,7 +27,7 @@ class Logs extends Admin_Controller {
             /* Breadcrumbs */
             $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
-            // $this->data['groups'] = $this->ion_auth->groups()->result();
+            $this->data['logs'] = $this->logs_model->get_logs();
 
             /* Load Template */
             $this->template->admin_render('admin/logs/index', $this->data);
