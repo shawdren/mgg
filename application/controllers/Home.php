@@ -8,9 +8,3 @@ class Home extends Public_Controller {
         parent::__construct();
     }
 
-
-	public function index()
-	{
-		$this->load->view('public/home', $this->data);
-	}
-}

@@ -6,6 +6,7 @@ class Logs extends Admin_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->lang->load('admin/groups');
         /* Title Page :: Common */
         $this->page_title->push(lang('menu_logs'));
         $this->load->model('admin/logs_model');
